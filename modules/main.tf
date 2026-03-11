@@ -56,3 +56,6 @@ resource "aws_organizations_policy_attachment" "attachments" {
   policy_id = aws_organizations_policy.scp_policy.id
   target_id = each.value
 }
+
+
+##
