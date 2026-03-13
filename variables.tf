@@ -6,7 +6,7 @@ variable "scp_description" {
   type = string
 }
 
-variable "scp_json_path" {
+variable "scp_path" {
   type = string
 }
 

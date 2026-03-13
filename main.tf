@@ -37,7 +37,7 @@ locals {
 resource "aws_organizations_policy" "scp_policy" {
   name        = var.scp_name
   description = var.scp_description
-  content     = file(var.scp_json_path)   # ✅ fixed
+  content     = file(var.scp_path)  
   type        = var.scp_type
 }
 
