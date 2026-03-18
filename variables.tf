@@ -15,17 +15,17 @@ variable "scp_type" {
 }
 
 variable "include_root" {
-  type = bool
+  type        = bool
   description = "include root_id = true, exlclude root_id = false"
 }
 
 variable "target_ou_names" {
-  type = list(string)
+  type        = list(string)
   description = "scp target ou name, leave it blank, it you don't want to attach scp to ou"
 }
 
 variable "target_account_names" {
-  type = list(string)
+  type        = list(string)
   description = "scp target account names, leave it blank, it you don't want to attach scp to account"
 }
 
